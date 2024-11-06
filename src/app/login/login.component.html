@@ -1,1 +1,40 @@
-<p>login works!</p>
+
+<body>
+  <div class="form-container">
+    <form [formGroup]="userForm" (ngSubmit)="submitForm()" class="c">
+      <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" formControlName="name" placeholder="name" />
+
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="text" id="email" name="email" formControlName="email" placeholder="email" />
+      </div>
+      
+      <div formGroupName="address">
+        <div>
+          <label for="street">Street: </label>
+          <input type="text" id="street" name="street" formControlName="street" placeholder="street" />
+        </div>
+        <div>
+          <label for="city">City: </label>
+          <input type="text" id="city" name="city" formControlName="city" placeholder="city" />
+        </div>
+      </div>
+      <div>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <button [disabled]="!userForm.valid" type="submit" class="btn btn-primary">Submit user</button>
+        <!-- <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div> -->
+
+      </div>
+    
+    </form>
+  </div>
+
+</body>
