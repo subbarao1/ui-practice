@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { ConfirmationDashBoardComponent } from './confirmation-dash-board/confirmation-dash-board.component';
 
 export const routes: Routes = [
-    {path:"LoginPage", component:LoginComponent,},
+    {path:"", component:LoginComponent,},
     {path:"app-work-force-dashboard", component:WorkForceDashboardComponent},
    {path:"app-confirmation-dash-board", component:ConfirmationDashBoardComponent}
 ];
