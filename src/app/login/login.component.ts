@@ -31,7 +31,7 @@ export class LoginComponent {
     if(this.userForm.valid){
       this.isFormSubmitted=true;
       console.log(this.userForm.value)
-      this.router.navigateByUrl('/work-force-dashboard');
+      this.router.navigateByUrl('/app-work-force-dashboard');
     }
   }
   ngOnInit(){
