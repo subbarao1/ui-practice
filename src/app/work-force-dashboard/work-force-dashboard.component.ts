@@ -8,19 +8,18 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CommonModule } from "@angular/common";
 
 
 @Component({
   selector: 'app-work-force-dashboard',
   standalone: true,
-  imports: [FooterComponent, HeaderComponent,MatAutocompleteModule,MatFormFieldModule,MatInputModule,AsyncPipe,FormsModule,ReactiveFormsModule,CommonModule],
+  imports: [FooterComponent, HeaderComponent,MatAutocompleteModule,MatFormFieldModule,MatInputModule,AsyncPipe,FormsModule,ReactiveFormsModule],
   templateUrl: './work-force-dashboard.component.html',
   styleUrl: './work-force-dashboard.component.css'
 })
 export class WorkForceDashboardComponent {
   myControl = new FormControl('');
+  animations?: any[]
   options: string[] = ['One', 'Two', 'Three'];
   filteredOptions!: Observable<string[]>;
   
