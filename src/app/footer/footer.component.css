@@ -1,6 +1,6 @@
 .footer{
     flex-shrink: 0;
     flex-grow: 0;
-    background: #eee;
+    background-color: #039be5;
     padding: 3px 15px;
   }
